@@ -2,20 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>RedRose OS | Private & Powerful</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedRose OS | Private & Powerful Distro</title>
     <style>
-        body { background-color: #0d0d0d; color: #9a031e; font-family: 'Courier New', Courier, monospace; text-align: center; padding: 50px; }
-        h1 { border-bottom: 2px solid #9a031e; display: inline-block; padding-bottom: 10px; }
-        .btn { color: #fff; background: #9a031e; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; }
-        .status { color: #888; margin-top: 20px; }
+        body { background-color: #000; color: #fff; font-family: 'Poppins', sans-serif; text-align: center; margin: 0; padding: 20px; }
+        
+        /* Changelog Title */
+        .changelog { color: #888; font-size: 1.2rem; margin-bottom: 20px; text-decoration: none; display: inline-block; }
+        .changelog:hover { color: #fff; }
+
+        /* Architecture Selector */
+        .arch-selector { background: #1a1a1a; border-radius: 50px; display: inline-block; padding: 5px; margin-bottom: 30px; border: 1px solid #333; }
+        .arch-btn { background: none; border: none; color: #fff; padding: 10px 25px; border-radius: 50px; cursor: pointer; font-weight: bold; }
+        .arch-btn.active { background-color: #9a031e; box-shadow: 0 0 10px rgba(154, 3, 30, 0.5); }
+
+        /* Card Container */
+        .download-card { background: #1a1a1a; border-radius: 12px; border: 1px solid #333; display: inline-block; width: 300px; position: relative; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); overflow: hidden; transition: border-color 0.3s ease; }
+        .download-card:hover { border-color: #9a031e; }
+
+        /* Recommended Badge */
+        .recommended-badge { background-color: #9a031e; color: #fff; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; position: absolute; top: 15px; left: 50%; transform: translateX(-50%); box-shadow: 0 0 10px rgba(154, 3, 30, 0.5); }
+
+        /* Core Logo */
+        .card-header { padding: 40px 0 20px 0; border-bottom: 1px solid #333; }
+        .card-logo { border: 2px solid #9a031e; border-radius: 50%; padding: 15px; display: inline-block; font-size: 3rem; color: #9a031e; }
+
+        /* Title & Desc */
+        .card-title { font-size: 1.5rem; font-weight: bold; margin: 15px 0 5px 0; color: #9a031e; }
+        .card-desc { color: #ccc; font-size: 0.9rem; padding: 0 20px 20px 20px; line-height: 1.4; }
+
+        /* Bottom Controls */
+        .card-controls { display: flex; justify-content: space-between; align-items: center; padding: 10px 15px; background: #000; border-top: 1px solid #333; }
+        .control-btn { background: none; border: none; color: #888; cursor: pointer; text-decoration: none; font-size: 1rem; }
+        .control-btn:hover { color: #fff; }
+        .size { color: #ccc; font-weight: bold; }
     </style>
 </head>
 <body>
-    <h1>🌹 RedRose OS</h1>
-    <p>Advanced Anonymity & Security Distribution</p>
-    <p>Built on Arch Linux. Designed for Shadows.</p>
-    <br><br>
-    <a href="https://github.com/cdassapy/RedRoseOS" class="btn">VIEW ON GITHUB</a>
-    <div class="status">Status: v0.1 Development Stage (Release: Next Friday)</div>
+
+    <a href="https://github.com/cdassapy/RedRoseOS/commits/main" class="changelog">RedRose OS Changelog 🔗</a>
+
+    <div class="arch-selector">
+        <button class="arch-btn active">x86_64</button>
+        <button class="arch-btn">Apple Silicon (ARM64)</button>
+    </div>
+
+    <br>
+
+    <div class="download-card">
+        <div class="recommended-badge">Recommended</div>
+        
+        <div class="card-header">
+            <div class="card-logo">🌹</div>
+        </div>
+
+        <div class="card-title">Snapshot v0.1</div>
+        <div class="card-desc">
+            Arch Linux Base. Advanced Anonymity & Cybersecurity Distribution. Volatile & Trace-Free.
+        </div>
+
+        <div class="card-controls">
+            <a href="#" class="control-btn" title="Download Image">⬇️</a>
+            <span class="size">4.4G</span>
+            
+            <a href="#" class="control-btn" title="Snapshot v0.1 Release Info">Info</a>
+            <a href="#" class="control-btn" title="Direct Download Snapshot">Download</a>
+        </div>
+    </div>
+
 </body>
 </html>
