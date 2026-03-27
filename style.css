@@ -1,73 +1,83 @@
-
 body { 
     background-color: #050505; 
+    background-image: linear-gradient(0deg, transparent 24%, rgba(154, 3, 30, .05) 25%, rgba(154, 3, 30, .05) 26%, transparent 27%, transparent 74%, rgba(154, 3, 30, .05) 75%, rgba(154, 3, 30, .05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(154, 3, 30, .05) 25%, rgba(154, 3, 30, .05) 26%, transparent 27%, transparent 74%, rgba(154, 3, 30, .05) 75%, rgba(154, 3, 30, .05) 76%, transparent 77%, transparent);
+    background-size: 50px 50px;
     color: #fff; 
     font-family: 'Courier New', monospace; 
     display: flex; 
     flex-direction: column; 
     align-items: center; 
     margin: 0; 
-    padding: 50px; 
+    padding: 80px 20px; 
+    min-height: 100vh;
 }
 
 .top-bar { 
     display: flex; 
     justify-content: space-between; 
     width: 100%; 
-    max-width: 700px; 
-    margin-bottom: 50px; 
+    max-width: 400px; 
+    margin-bottom: 40px; 
     align-items: center;
 }
-.changelog { color: #888; text-decoration: none; font-size: 1.1rem; }
-.changelog:hover { color: #9a031e; }
+
+.changelog { color: #444; text-decoration: none; font-size: 0.8rem; }
+
 .counter-box { 
-    background: #111; 
-    padding: 10px 20px; 
-    border: 1px solid #333; 
-    border-radius: 5px; 
     color: #9a031e; 
     font-weight: bold;
+    font-size: 1.2rem;
+    text-shadow: 0 0 5px rgba(154, 3, 30, 0.5);
 }
 
 .download-card { 
-    background: #0d0d0d; 
-    border-radius: 12px; 
-    border: 1px solid #333; 
-    width: 50px; 
+    background: rgba(10, 10, 10, 0.9); 
+    border-radius: 4px; 
+    border: 1px solid #1a1a1a; 
+    width: 300px; 
     position: relative; 
     text-align: center; 
-    box-shadow: 0 10px 30px rgba(0,0,0,0.8); 
-    transition: 0.3s; 
+    box-shadow: 0 30px 60px rgba(0,0,0,1); 
 }
-.download-card:hover { border-color: #9a031e; box-shadow: 0 0 20px rgba(154, 3, 30, 0.4); }
 
 .recommended-badge { 
     background-color: #9a031e; 
     color: #fff; 
-    padding: 5px 15px; 
-    border-radius: 20px; 
-    font-size: 0.8rem; 
+    padding: 3px 12px; 
+    font-size: 0.7rem; 
     font-weight: bold; 
     position: absolute; 
-    top: -15px; 
-    left: 50%; 
-    transform: translateX(-50%); 
+    top: -10px; 
+    left: 20px; 
 }
-.card-header { padding: 40px 0 20px 0; border-bottom: 1px solid #222; }
-.card-logo { width: 120px; height: 120px; object-fit: contain; } 
-.card-title { font-size: 1.5rem; font-weight: bold; margin: 15px 0 5px 0; color: #9a031e; }
-.card-desc { color: #888; font-size: 0.9rem; padding: 0 20px 20px 20px; }
+
+.card-header { padding: 40px 0; border-bottom: 1px solid #151515; }
+
+.card-logo { 
+    width: 180px; 
+    height: auto; 
+    filter: drop-shadow(0 0 15px rgba(154, 3, 30, 0.3)); 
+}
+
+.card-title { font-size: 1.2rem; font-weight: bold; margin: 25px 0; color: #9a031e; letter-spacing: 3px; }
 
 .card-controls { 
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    padding: 15px 20px; 
+    padding: 10px 20px; 
     background: #000; 
-    border-top: 1px solid #222; 
-    border-bottom-left-radius: 12px; 
-    border-bottom-right-radius: 12px; 
+    border-top: 1px solid #151515; 
 }
-.install-btn-img { width: 30px; cursor: pointer; transition: 0.2s; }
-.install-btn-img:hover { transform: scale(1.05); }
-.size { color: #555; font-weight: bold; }
+
+.install-btn-img { 
+    width: 60px; 
+    height: auto;
+    cursor: pointer; 
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+.install-btn-img:hover { opacity: 1; transform: scale(1.1); }
+
+.size { color: #333; font-size: 0.7rem; font-weight: bold; }
