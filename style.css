@@ -68,6 +68,6 @@ body {
     border-bottom-left-radius: 12px; 
     border-bottom-right-radius: 12px; 
 }
-.install-btn-img { width: 100px; cursor: pointer; transition: 0.2s; }
+.install-btn-img { width: 30px; cursor: pointer; transition: 0.2s; }
 .install-btn-img:hover { transform: scale(1.05); }
 .size { color: #555; font-weight: bold; }
