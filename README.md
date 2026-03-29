@@ -7,7 +7,6 @@
 ### 🛠️ Features
 * **Copy-to-RAM:** Volatile and trace-free architecture.
 * **Privacy First:** Pre-configured anonymity tools.
-* **Bordeaux Aesthetic:** Optimized Hyprland environment.
 
 ### 📅 Release Status
  <p>
