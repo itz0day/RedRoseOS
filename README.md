@@ -2,8 +2,9 @@
 
 **RedRose OS** is an Arch Linux-based distribution focused on **Cybersecurity** and **Anonymity**. 
 
-> **"Build your own shadows."**
+<code> **"Build your own shadows."** </code>
 <img width="300" height="300" alt="redrose_snapshot" src="https://github.com/user-attachments/assets/55a9df08-ebd9-4e53-b5be-00474e365931" />
+<pr>
 ### 🛠️ Features
 * **Copy-to-RAM:** Volatile and trace-free architecture.
 * **Privacy First:** Pre-configured anonymity tools.
