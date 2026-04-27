@@ -1,4 +1,4 @@
-# 🌹 RedRose OS (Snapshot v0.1)
+# 🌹 RedRose OS (Snapshot v0.2)
 
 **RedRose OS** is an Arch Linux-based distribution focused on **Cybersecurity** and **Anonymity**. 
 
